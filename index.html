@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Hosting Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to My Hosting</h1>
+        <p>Please verify to continue</p>
+        <button onclick="showRegister()">Create Account</button>
+        <p><a href="#" onclick="showLogin()">Click here if you already have an account</a></p>
+    </div>
+
+    <div id="register" class="hidden">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Full Name"><br>
+        <input type="email" placeholder="Email Address"><br>
+        <input type="password" placeholder="Password"><br>
+        <button onclick="sendPin()">Confirm</button>
+    </div>
+
+    <div id="verify" class="hidden">
+        <h2>Email Verification</h2>
+        <p>A verification PIN has been sent to your email (simulation).</p>
+        <input type="text" id="pinInput" placeholder="Enter PIN"><br>
+        <button onclick="verifyPin()">Verify</button>
+    </div>
+
+    <div id="hosting" class="hidden">
+        <h2>Hosting Menu</h2>
+        <button>GitHub Repository</button>
+        <button>Database</button>
+        <button>Template</button>
+        <button>Docker Image</button>
+        <button>Function</button>
+        <button>Bucket</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
